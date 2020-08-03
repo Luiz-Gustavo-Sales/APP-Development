@@ -1,0 +1,19 @@
+{
+  "name": "API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/serve.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "json": "^9.0.6",
+    "mogoose": "0.0.1-security",
+    "mongoose": "^5.9.23",
+    "nodemon": "^2.0.4",
+    "react-via-cep": "^2.0.8"
+  }
+}
