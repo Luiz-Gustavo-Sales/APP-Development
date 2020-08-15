@@ -1,29 +1,41 @@
 const { Schema, model } = require("mongoose");
 const ProdutividadeSchema = new Schema({
-  name: {
+  NomeTecnico: {
     type: String,
     required: true,
   },
-  cpf: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  endereco: {
+  NomeObra: {
     type: String,
     required: true,
   },
-  cidade: {
+  PeriodoObra: {
     type: String,
     required: true,
   },
-  cep: {
-    type: Number,
-    required: true,
-  },
-  senha: {
+  CondicoesTempo: {
     type: String,
     required: true,
   },
+  Acidentes: {
+    type: String,
+    required: true,
+  },
+  CondicoesArea: {
+    type: String,
+    require: true,
+  },
+  TempoInicio: {
+    type: String,
+    require: true,
+  },
+  TempoTermino: {
+    type: String,
+    require: true,
+  },
+  TempoExtra:{
+      type:String,
+      require:true
+  },
+  
 });
 module.exports = model("Produtividade", ProdutividadeSchema);
